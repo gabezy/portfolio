@@ -37,10 +37,16 @@ header {
 
 .header {
   display: flex;
+  flex-wrap: wrap;
   max-width: 1400px;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
+}
+
+.logo img:hover {
+  filter: invert(31%) sepia(14%) saturate(3557%) hue-rotate(223deg)
+    brightness(97%) contrast(104%);
 }
 
 .menu {
@@ -122,18 +128,35 @@ header {
   font-size: 1.3rem;
 }
 
+.information {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+}
+
 /* Projects */
 
 .projects {
+  position: relative;
   max-width: 1200px;
   margin: 10rem auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   flex-direction: column;
   justify-content: space-between;
-  gap: 20px 100px;
+}
+
+.project:nth-child(2) {
+  position: relative;
+  left: 1.1rem;
+}
+
+.project:last-child {
+  justify-self: flex-end;
 }
 
 .section-title {
+  grid-column: 1 / -1;
   display: flex;
   text-transform: uppercase;
   font-size: 2rem;
@@ -158,6 +181,7 @@ header {
 }
 
 .list-title {
+  margin-top: 0.5rem;
   font-size: 1.625rem;
   color: #2e2e2e;
   margin-bottom: 1.25rem;
@@ -200,10 +224,14 @@ header {
 .formation {
   max-width: 1200px;
   margin: 10rem auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   justify-content: space-between;
   align-items: flex-start;
-  gap: 20px 100px;
+}
+
+.course {
+  justify-self: center;
 }
 
 .content {
@@ -278,7 +306,7 @@ header {
 footer {
   text-align: center;
   color: #525050;
-  margin-top: 5rem;
+  margin-top: 3rem;
   margin-bottom: 2rem;
 }
 
