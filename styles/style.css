@@ -1,8 +1,8 @@
 :root {
-  --ff-primary: "Fira Sans", sans-serif;
+  --ff-primary: "Fira Sans", Arial, sans-serif;
   --ff-secondary: "Fira Code", monospace;
   --clr-nav-item: #2e2e2e;
-  --clr-purple-dark: #120236;
+  --clr-purple-dark: #260e5b;
   --clr-purple-light: #613fb1;
 }
 
@@ -33,19 +33,23 @@ a {
   text-decoration: none;
 }
 
-/* Header */
-
-header {
-  margin: 2rem 0;
+.container {
+  max-width: 1200px;
 }
+
+/* Header */
 
 .header {
   display: flex;
   flex-wrap: wrap;
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 2rem auto;
   justify-content: space-between;
   align-items: center;
+}
+
+.logo img {
+  transition: all 0.5s ease-in;
 }
 
 .logo img:hover {
@@ -53,12 +57,14 @@ header {
     brightness(97%) contrast(104%);
 }
 
-.menu {
+.header-menu {
   display: flex;
   flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
 
-.menu a {
+.header-menu a {
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
@@ -68,13 +74,28 @@ header {
   margin-bottom: 2px;
 }
 
-.menu a:hover::after {
+.header-menu a:hover::after {
   content: "";
   display: block;
   width: 60%;
   height: 2px;
   background: var(--clr-purple-light);
   margin-bottom: -2px;
+}
+
+@media (max-width: 665px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .header-menu a {
+    background: #f1f1f1;
+    border-radius: 5px;
+  }
+  .logo {
+    margin: 0;
+  }
 }
 
 /* About */
@@ -109,9 +130,23 @@ header {
 }
 
 .title {
+  position: relative;
   font-size: 4rem;
   color: var(--clr-purple-dark);
   font-weight: bold;
+}
+
+.title::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-image: url("img/detail.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: -17px;
+  left: -38px;
 }
 
 .description {
@@ -124,7 +159,7 @@ header {
   line-height: 1.5;
 }
 
-.description span {
+.description strong {
   color: var(--clr-purple-light);
 }
 
@@ -133,19 +168,55 @@ header {
   font-size: 1.3rem;
 }
 
+@media (max-width: 550px) {
+  .about,
+  .about-c {
+    max-width: 80%;
+  }
+}
+@media (max-width: 400px) {
+  .about {
+    margin: 5rem auto;
+  }
+  .title {
+    position: relative;
+    font-size: 2.5rem;
+  }
+  .title::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 30px;
+    height: 10px;
+    background: #b87ce6;
+    border-radius: 5px;
+    top: 0px;
+    left: 0;
+  }
+  .subtitle {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .description,
+  .located {
+    font-size: 0.825rem;
+  }
+}
+
+/* Section Informatio */
 .information {
-  max-width: 1200px;
   margin: 0 auto;
   display: grid;
   grid-column: 1fr;
   grid-row: auto auto;
 }
 
+/*  **********/
 /* Projects */
+/* **************** */
 
 .projects {
   position: relative;
-  max-width: 1200px;
   margin: 10rem auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
@@ -190,8 +261,16 @@ header {
 .list-title {
   margin-top: 0.5rem;
   font-size: 1.625rem;
-  color: #2e2e2e;
   margin-bottom: 1.25rem;
+  transition: all 0.3 ease-in;
+}
+
+.list-title a {
+  color: #2e2e2e;
+}
+
+.list-title a:hover {
+  color: var(--clr-purple-light);
 }
 
 .list-description {
@@ -230,7 +309,6 @@ header {
 
 .formation {
   position: relative;
-  max-width: 1200px;
   margin: 10rem auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
@@ -299,7 +377,6 @@ header {
 
 .social {
   position: relative;
-  max-width: 1200px;
   margin: 12rem auto;
 }
 
@@ -344,14 +421,36 @@ footer hr {
 }
 
 @media (max-width: 1300px) {
+  .container {
+    max-width: 90%;
+  }
+  .projects {
+    margin: 5rem auto;
+    gap: 30px;
+  }
   .project:last-child {
-    justify-self: center;
+    justify-self: flex-start;
+    position: relative;
+    left: 15px;
+  }
+  .formation {
+    margin: 5rem auto;
   }
   .course {
     position: relative;
     justify-self: flex-start;
-    left: 7rem;
     text-align: left;
+    left: -1px;
+    margin-top: 25px;
+  }
+  .social {
+    position: relative;
+    margin: 5rem auto;
+  }
+  .social-c {
+    max-width: max-content;
+    position: relative;
+    left: 154px;
   }
 }
 
