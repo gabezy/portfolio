@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel | Front-End Developer</title>
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/style.min.css">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,9 +18,7 @@
 
 <body>
     <header class="header">
-        <a href="/index.html" class="logo">
-            <img src="/img/logo.svg" alt="GM">
-        </a>
+        <img src="/img/logo.svg" alt="GM" class="logo" id="icon">
         <nav aria-label="primary">
             <ul class="header-menu">
                 <li><a href="#projects-section">projects</a></li>
@@ -32,11 +30,10 @@
     <main>
         <section class="about">
             <div class="about-c">
+                <img src="/img/detail.svg" alt="" id="detail">
                 <h1 class="title"><span class="subtitle">My name is</span>Gabriel Moreira</h1>
-                <p class="description">
-                    I am a front-end developer who knows about UX Design and back-end. <strong>HTML</strong>, <strong>CSS</strong> & <strong>JavaScript</strong> are my best-friends
+                <p class="description" id="typed-content">
                 </p>
-                <p class="located">Located in brasília, Brazil</p>
             </div>
         </section>
     </main>
@@ -82,13 +79,13 @@
             <div class="education">
                 <h2 class="section-title">education</h2>
                 <div class="content">
-                    <img src="/img/column.svg" alt="">
+                    <img src="/img/column.svg" alt="" id="column">
                     <div class="degree-c">
                         <ul class="degree">
                             <h3>Bachelor’s Degree -
                                 <span>Business</span>
                             </h3>
-                            <p class="located">Uniceub</p>
+                            <p class="college">Uniceub</p>
                             <p class="period">Fev/2021 - Dez/2024</p>
                         </ul>
                         <ul class="degree">
@@ -96,7 +93,7 @@
                                 <span>Desenvolvimento</span>
                                 <span>Full-Stack</span>
                             </h3>
-                            <p class="located">Uniceub</p>
+                            <p class="college">Uniceub</p>
                             <p class="period">Fev/2021 - Dez/2024</p>
                         </ul>
                     </div>
@@ -105,14 +102,14 @@
             <div class="course">
                 <h2 class="section-title">courses</h2>
                 <div class="content">
-                    <img src="/img/column.svg" alt="">
+                    <img src="/img/column.svg" alt="" id="column2">
                     <div class="course-c">
                         <ul class="course-list">
                             <h3>
                                 UX & UI
                                 <span>Design</span>
                             </h3>
-                            <p class="located">Origamid</p>
+                            <p class="college">Origamid</p>
                             <p class="period">56H</p>
                         </ul>
                         <ul class="course-list">
@@ -120,7 +117,7 @@
                                 Front-End para
                                 <span>Iniciantes</span>
                             </h3>
-                            <p class="located">Origamid</p>
+                            <p class="college">Origamid</p>
                             <p class="period">56H</p>
                         </ul>
                     </div>
@@ -136,17 +133,17 @@
             <ul class="social-list">
                 <li>
                     <a href="https://www.linkedin.com/in/gabriel--moreira/" target="_blank">
-                        <img src="/img/linkedin.svg" alt="">
+                        <img src="/img/linkedin.svg" alt="" id="linkedin">
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/gabezy" target="_blank">
-                        <img src="/img/github.svg" alt="">
+                        <img src="/img/github.svg" alt="" id="github">
                     </a>
                 </li>
                 <li>
                     <a href="mailto:gabrielmoreira2705@gmail.com" target="_blank">
-                        <img src="/img/mail.svg" alt="">
+                        <img src="/img/mail.svg" alt="" id="mail">
                     </a>
                 </li>
             </ul>
@@ -157,7 +154,7 @@
         <p>All rights reserved. Created by Gabriel Moreira</p>
         <hr>
     </footer>
-
+    <script src="/app.js"></script>
 </body>
 
 </html>
