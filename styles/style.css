@@ -11,6 +11,7 @@
   --text-primary: #000;
   --text-secondary: #111010;
   --clr-section-title: #1b1b1b;
+  --clr-section-subtitle: #2e2e2e;
   --clr-tech-item: #cbcbcb;
   --clr-text-college: #525050;
   --clr-text-period: #838383;
@@ -27,7 +28,7 @@
   --clr-purple-light: #9f23fe;
   --clr-typewriter: #8e6ddd;
   --clr-bg: #1f1f1f;
-  --title-detail: #b87ce6;
+  --title-detail: #9f23fe;
   --footer-bar-bg: #9067ed;
   --text-primary: #fff;
   --text-secondary: #111010;
@@ -392,11 +393,10 @@ a {
   font-size: 1.625rem;
   margin-bottom: 1.25rem;
   transition: all 0.3 ease-in;
-  color: var(--clr-section-subtitle);
 }
 
 .list-title a {
-  color: var(--text-primary);
+  color: var(--clr-section-subtitle);
 }
 
 .list-title a:hover {
@@ -475,10 +475,10 @@ a {
   top: 5px;
 }
 
-.degree-c h3,
+.degree h3,
 .course h3 {
   font-size: 1.25rem;
-  color: var(--text-primary);
+  color: var(--clr-section-subtitle);
 }
 
 .degree-c span,
