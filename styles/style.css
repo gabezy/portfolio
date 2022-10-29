@@ -134,6 +134,9 @@ a {
     margin: 0;
     margin-left: 0 !important;
   }
+  .logo:hover {
+    filter: none;
+  }
 }
 
 /* About */
@@ -392,14 +395,14 @@ a {
   margin-top: 0.5rem;
   font-size: 1.625rem;
   margin-bottom: 1.25rem;
-  transition: all 0.3 ease-in;
+  /* transition: all 0.3 ease-in; */
 }
 
-.list-title a {
+.list-title {
   color: var(--clr-section-subtitle);
 }
 
-.list-title a:hover {
+.list-title:hover {
   color: var(--clr-purple-light);
 }
 
