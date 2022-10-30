@@ -137,6 +137,9 @@ a {
   .logo:hover {
     filter: none;
   }
+  .header-.header-menu a:hover::after {
+    display: none;
+  }
 }
 
 /* About */
