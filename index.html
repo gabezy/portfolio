@@ -18,12 +18,33 @@
 
 <body>
     <header class="header">
-        <img src="/img/logo.svg" alt="GM" class="logo" id="icon">
-        <nav aria-label="primary">
+        <div class="logo">
+            <img src="/img/logo.svg" alt="GM" id="icon">
+        </div>
+        <nav class="menu-nav" aria-label="primary">
             <ul class="header-menu">
                 <li><a href="#projects-section">projects</a></li>
                 <li><a href="#education-section">education</a></li>
                 <li><a href="#social-section">socials</a></li>
+            </ul>
+        </nav>
+        <nav class="social-nav" aria-label="social">
+            <ul class="social-list">
+                <li>
+                    <a href="https://www.linkedin.com/in/gabriel--moreira/" target="_blank">
+                        <img src="/img/linkedin.svg" alt="" id="linkedin">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/gabezy" target="_blank">
+                        <img src="/img/github.svg" alt="" id="github">
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:gabrielmoreira2705@gmail.com" target="_blank">
+                        <img src="/img/mail.svg" alt="" id="mail">
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -131,26 +152,26 @@
     </section>
 
 
-    <section class="container social" id="social-section">
-        <div class="social-c">
-            <h2 class="section-title">social</h2>
-            <ul class="social-list">
-                <li>
-                    <a href="https://www.linkedin.com/in/gabriel--moreira/" target="_blank">
-                        <img src="/img/linkedin.svg" alt="" id="linkedin">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/gabezy" target="_blank">
-                        <img src="/img/github.svg" alt="" id="github">
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:gabrielmoreira2705@gmail.com" target="_blank">
-                        <img src="/img/mail.svg" alt="" id="mail">
-                    </a>
-                </li>
-            </ul>
+    <section class="container contact" id="contact-section">
+        <h2 class="section-title">contact</h2>
+        <p>Send me a message</p>
+        <form class="contact-form" action="">
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="input-group last">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="5"></textarea>
+            </div>
+            <button class="last">Send</button>
+
+        </form>
+
         </div>
     </section>
 
