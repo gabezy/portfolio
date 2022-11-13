@@ -1,0 +1,74 @@
+:root {
+    --ff-primary: "Fira Sans", Arial, sans-serif;
+    --ff-secondary: "Fira Code", monospace;
+    --clr-nav-item: #2e2e2e;
+    --clr-purple-dark: #260e5b;
+    --clr-purple-light: #613fb1;
+    --clr-typewriter: #613fb1;
+    --clr-bg: #f5f5f5;
+    --title-detail: #b87ce6;
+    --footer-bar-bg: #2d0f71;
+    --text-primary: #000;
+    --text-secondary: #111010;
+    --clr-section-title: #1b1b1b;
+    --clr-section-subtitle: #2e2e2e;
+    --clr-tech-item: #cbcbcb;
+    --clr-text-college: #525050;
+    --clr-text-period: #838383;
+    --clr-text-located: #000000;
+    --clr-text-footer: #7E7C7C
+    --filter-effect: invert(31%) sepia(14%) saturate(3557%) hue-rotate(223deg)
+      brightness(97%) contrast(104%);
+    --title-detail-img: "img/detail.svg";
+    --clr-nav-item-bg-mobile: #f1f1f1;
+  }
+  
+  .dark-mode {
+    --clr-nav-item: #fff;
+    --clr-purple-dark: #7758bf;
+    --clr-purple-light: #9f23fe;
+    --clr-typewriter: #8e6ddd;
+    --clr-bg: #1f1f1f;
+    --title-detail: #9f23fe;
+    --footer-bar-bg: #9067ed;
+    --text-primary: #fff;
+    --text-secondary: #111010;
+    --clr-section-title: #fff;
+    --clr-tech-item: #9c76f5;
+    --clr-text-college: #c3c3c3;
+    --clr-text-period: #9c9c9c;
+    --clr-text-located: #dbdbdb;
+    --clr-section-subtitle: #e1e1e1;
+    --filter-effect: invert(34%) sepia(90%) saturate(1036%) hue-rotate(232deg)
+      brightness(86%) contrast(95%);
+    --clr-nav-item-bg-mobile: #878787;
+    --clr-text-footer: #fff
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  body {
+    font-family: var(--ff-primary);
+    background: var(--clr-bg);
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+

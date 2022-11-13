@@ -1,0 +1,24 @@
+footer {
+  text-align: center;
+  color: #525050;
+  margin-top: 3rem;
+  max-width: 100vw;
+}
+
+footer p {
+  margin-bottom: 1rem;
+  color: var(--clr-text-footer);
+}
+
+footer hr {
+  max-width: 100vw;
+  height: 10px;
+  background: var(--footer-bar-bg);
+  border: 0px;
+}
+
+@media (max-width: 400px) {
+  footer p {
+    font-size: 0.6rem;
+  }
+}
