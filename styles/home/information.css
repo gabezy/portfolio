@@ -40,8 +40,7 @@
 .list-title {
   color: var(--clr-section-subtitle);
 }
-
-.list-title:hover {
+.project-list a:hover .list-title {
   color: var(--clr-purple-light);
 }
 

@@ -1,8 +1,12 @@
+.contact {
+  margin-bottom: 80px;
+}
 .contact > p {
   margin-top: 1rem;
   font-size: 1.5rem;
   margin-left: 1.4rem;
   margin-bottom: 1rem;
+  color: var(--text-primary);
 }
 .contact > p > span {
   color: var(--title-detail);
@@ -15,7 +19,7 @@
   max-width: 700px;
   margin-left: 1.4rem;
   gap: 40px;
-  box-shadow: rgb(0 0 0 / 5%) 0px 0px 20px 0px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 0px 20px 0px;
   box-sizing: border-box;
   padding: 2rem;
 }
