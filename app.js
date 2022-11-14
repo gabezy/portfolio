@@ -53,3 +53,14 @@ icon.onclick = function () {
     column2.src = "/img/column.svg";
   }
 };
+
+// Mobile menu
+
+const hamburgeMenu = document.getElementById("hamburger-menu");
+const htmlBody = document.querySelector("body");
+
+hamburgeMenu.addEventListener("click", function () {
+  const mobileMenu = document.querySelector(".mobile-nav");
+  mobileMenu.classList.toggle("activate");
+  htmlBody.classList.toggle("mobile-mode");
+});

@@ -1,9 +1,15 @@
 .contact > p {
   margin-top: 1rem;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin-left: 1.4rem;
+  margin-bottom: 1rem;
 }
-.contact form {
+.contact > p > span {
+  color: var(--title-detail);
+  font-size: 2rem;
+  margin-left: 2px;
+}
+.contact-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 700px;
@@ -54,4 +60,18 @@
   padding: 10px 20px;
   border-radius: 44px;
   justify-self: end;
+}
+@media (max-width: 1300px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-form {
+    margin-inline: auto;
+  }
+}
+@media (max-width: 800px) {
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
 }

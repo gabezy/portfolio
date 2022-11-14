@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Fira+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/107ce2b180.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -40,14 +41,31 @@
                         <img src="/img/github.svg" alt="" id="github">
                     </a>
                 </li>
+                <li id="hamburger-menu"><i class="fa-solid fa-bars"></i></li>
+            </ul>
+        </nav>
+        <nav class="mobile-nav" aria-label="primary">
+            <ul class="mobile-menu">
+                <li><a href="#projects-section">projects</a></li>
+                <li><a href="#education-section">education</a></li>
+                <li><a href="#social-section">socials</a></li>
+            </ul>
+            <ul class="mobile-social">
                 <li>
-                    <a href="mailto:gabrielmoreira2705@gmail.com" target="_blank">
-                        <img src="/img/mail.svg" alt="" id="mail">
+                    <a href="https://www.linkedin.com/in/gabriel--moreira/" target="_blank">
+                        <img src="/img/linkedin.svg" alt="" id="linkedin">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/gabezy" target="_blank">
+                        <img src="/img/github.svg" alt="" id="github">
                     </a>
                 </li>
             </ul>
         </nav>
+
     </header>
+
     <main>
         <section class="about">
             <div class="about-c">
@@ -154,19 +172,19 @@
 
     <section class="container contact" id="contact-section">
         <h2 class="section-title">contact</h2>
-        <p>Send me a message</p>
+        <p>Send me a message<span>!</span></p>
         <form class="contact-form" action="">
             <div class="input-group">
                 <label for="name">Name</label>
-                <input type="text" name="name" id="name">
+                <input required type="text" name="name" id="name">
             </div>
             <div class="input-group">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+                <input required type="email" name="email" id="email">
             </div>
             <div class="input-group last">
                 <label for="message">Message</label>
-                <textarea name="message" id="message" rows="5"></textarea>
+                <textarea required name="message" id="message" rows="5"></textarea>
             </div>
             <button class="last">Send</button>
 

@@ -63,6 +63,9 @@
     font-family: var(--ff-primary);
     background: var(--clr-bg);
   }
+  body.mobile-mode {
+    overflow-y: hidden;
+  }
   
   ul {
     list-style: none;
