@@ -18,18 +18,16 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="logo">
-            <img src="/img/logo.svg" alt="GM" id="icon">
-        </div>
+    <header class="header grid-center">
         <nav class="menu-nav" aria-label="primary">
-            <ul class="header-menu">
+            <a class="logo" href="./index.html">
+                <img src="/img/logo.svg" alt="GM" id="icon">
+            </a>
+            <ul class="internal-menu">
                 <li><a href="#projects-section">projects</a></li>
                 <li><a href="#education-section">education</a></li>
-                <li><a href="#social-section">socials</a></li>
+                <li><a href="#social-section">contact</a></li>
             </ul>
-        </nav>
-        <nav class="social-nav" aria-label="social">
             <ul class="social-list">
                 <li>
                     <a href="https://www.linkedin.com/in/gabriel--moreira/" target="_blank">
@@ -44,7 +42,7 @@
                 <li id="hamburger-menu"><i class="fa-solid fa-bars"></i></li>
             </ul>
         </nav>
-        <nav class="mobile-nav" aria-label="primary">
+        <!-- <nav class="mobile-nav" aria-label="primary">
             <ul class="mobile-menu">
                 <li><a href="#projects-section">projects</a></li>
                 <li><a href="#education-section">education</a></li>
@@ -62,142 +60,123 @@
                     </a>
                 </li>
             </ul>
-        </nav>
+        </nav> -->
 
     </header>
 
-    <main>
-        <section class="about">
-            <div class="about-c">
-                <img src="/img/detail.svg" alt="" id="detail">
-                <h1 class="title"><span class="subtitle">My name is</span>Gabriel Moreira</h1>
-                <p class="description" id="typed-content">
-                </p>
-            </div>
-        </section>
+    <main class="grid-center about">
+        <div class="about-c">
+            <h1 class="title"><span class="subtitle">My name is</span>Gabriel Moreira</h1>
+            <p class="description" id="typed-content">
+                I am a front-end developer who knows<br>
+                about UX Design and back-end. <span>HTML</span>,<br>
+                <span>CSS</span> & <span>JavaScript</span> are my best-friends
+            </p>
+            <p class="about-located">Located in brasília,Brazil</p>
+        </div>
     </main>
 
-    <section class="information" aria-label="projects">
-        <article class="container projects" id="projects-section">
-            <h2 class="section-title">projects</h2>
-            <div class="project">
-                <ul class="project-list">
-                    <a href="https://www.google.com/" target="_blank">
-                        <li>
-                            <h3 class="list-title">Bikcraft</h3>
-                        </li>
-                        <li>
-                            <p class="list-description">A website for a fictional brand <strong>Bikecraft</strong> to sell their products and service. In this project i developed using HTML, CSS and Javascript</p>
-                        </li>
-                    </a>
-                    <ul class="tech-list">
-                        <li>html</li>
-                        <li>css</li>
-                        <li>Javascript</li>
-                        <li>ux design</li>
-                    </ul>
+    <section class="grid-center projects" id="projects" aria-label="projects">
+        <h1 class="title-section">projects</h1>
+        <ul class="projects-list">
+            <li>
+                <h2>Bikcraft</h2>
+                <p class="list-description">A website for a fictional brand <strong>Bikecraft</strong> to sell their products and service. In this project i developed using HTML, CSS and Javascript
+                </p>
+                <ul class="tech-list">
+                    <li>html</li>
+                    <li>css</li>
+                    <li>Javascript</li>
+                    <li>ux design</li>
                 </ul>
-            </div>
-            <div class="project">
-                <ul class="project-list">
-                    <a href="https://www.google.com/" target="_blank">
-                        <li>
-                            <h3 class="list-title">Bikcraft</h3>
-                        </li>
-                        <li>
-                            <p class="list-description">A website for a fictional brand <strong>Bikecraft</strong> to sell their products and service. In this project i developed using HTML, CSS and Javascript</p>
-                        </li>
-                    </a>
-                    <ul class="tech-list">
-                        <li>html</li>
-                        <li>css</li>
-                        <li>Javascript</li>
-                        <li>ux design</li>
-                    </ul>
+            </li>
+            <li>
+                <h2>Bikcraft</h2>
+                <p class="list-description">
+                    A website for a fictional brand <strong>Bikecraft</strong> to sell their products and service. In this project i developed using HTML, CSS and Javascript
+                </p>
+                <ul class="tech-list">
+                    <li>html</li>
+                    <li>css</li>
+                    <li>Javascript</li>
+                    <li>ux design</li>
                 </ul>
-            </div>
-        </article>
-
-        <article class="container formation" id="education-section" aria-label="education">
-            <div class="education">
-                <h2 class="section-title">education</h2>
-                <div class="content">
-                    <img src="/img/column.svg" alt="" id="column">
-                    <div class="degree-c">
-                        <ul class="degree">
-                            <h3>Bachelor’s Degree -
-                                <span>Business</span>
-                            </h3>
-                            <p class="college">Uniceub</p>
-                            <p class="period">Fev/2021 - Dez/2024</p>
-                        </ul>
-                        <ul class="degree">
-                            <h3>Technology Degree -
-                                <span>Desenvolvimento</span>
-                                <span>Full-Stack</span>
-                            </h3>
-                            <p class="college">Uniceub</p>
-                            <p class="period">Fev/2021 - Dez/2024</p>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="course">
-                <h2 class="section-title">courses</h2>
-                <div class="content">
-                    <img src="/img/column.svg" alt="" id="column2">
-                    <div class="course-c">
-                        <ul class="course-list">
-                            <h3>
-                                UX & UI
-                                <span>Design</span>
-                            </h3>
-                            <p class="college">Origamid</p>
-                            <p class="period">56H</p>
-                        </ul>
-                        <ul class="course-list">
-                            <h3>
-                                Front-End para
-                                <span>Iniciantes</span>
-                            </h3>
-                            <p class="college">Origamid</p>
-                            <p class="period">56H</p>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </article>
+            </li>
+        </ul>
     </section>
 
+    <section class="grid-center education" id="education-section" aria-label="education">
+        <div class="formation">
+            <h1 class="title-section col-wide">education</h1>
+            <img src="./img/column.svg" alt="">
+            <ul class="item-list">
+                <li>
+                    <h2>Bachelor’s Degree -<br>Business
+                    </h2>
+                    <p class="college">Uniceub</p>
+                    <p class="period">Fev/2021 - Dez/2024</p>
+                </li>
+                <li>
+                    <h2>Technology Degree -<br>Desenvolvimento<br>Full-Stack
+                    </h2>
+                    <p class="college">Uniceub</p>
+                    <p class="period">Fev/2021 - Dez/2024</p>
+                </li>
+            </ul>
+        </div>
+        <div class="courses">
+            <h1 class="title-section col-wide">courses</h1>
+            <img src="./img/column.svg" alt="">
+            <ul class="item-list">
+                <li>
+                    <h2>
+                        UX & UI<br>
+                        Design
+                    </h2>
+                    <p class="college">Origamid</p>
+                    <p class="period">56H</p>
+                </li>
+                <li>
+                    <h2>
+                        Front-End para
+                        <br>Iniciantes
+                    </h2>
+                    <p class="college">Origamid</p>
+                    <p class="period">56H</p>
+                </li>
 
-    <section class="container contact" id="contact-section">
-        <h2 class="section-title">contact</h2>
-        <p>Send me a message<span>!</span></p>
-        <form class="contact-form" action="">
-            <div class="input-group">
-                <label for="name">Name</label>
-                <input required type="text" name="name" id="name">
-            </div>
-            <div class="input-group">
-                <label for="email">Email</label>
-                <input required type="email" name="email" id="email">
-            </div>
-            <div class="input-group last">
-                <label for="message">Message</label>
-                <textarea required name="message" id="message" rows="5"></textarea>
-            </div>
-            <button class="last">Send</button>
-
-        </form>
-
+            </ul>
         </div>
     </section>
 
-    <footer>
+
+    <section class="grid-center contact" id="contact-section">
+        <h2 class="title-section">contact</h2>
+        <div>
+            <p>Send me a message<span>!</span></p>
+            <form class="contact-form" action="">
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input required type="text" name="name" id="name">
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input required type="email" name="email" id="email">
+                </div>
+                <div class="input-group last">
+                    <label for="message">Message</label>
+                    <textarea required name="message" id="message" rows="5"></textarea>
+                </div>
+                <button class="last">Send</button>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- <footer>
         <p>All rights reserved. Created by Gabriel Moreira</p>
         <hr>
-    </footer>
-    <script src="/app.js"></script>
+    </footer> -->
 </body>
 
 </html>

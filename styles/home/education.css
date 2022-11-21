@@ -1,0 +1,48 @@
+.education {
+  margin: 3rem 0;
+  display: grid;
+  grid-template-columns: 1fr minmax(100px, 1fr) 1fr;
+  align-items: flex-start;
+}
+
+.formation {
+  grid-column: 1;
+}
+.courses {
+  grid-column: 3;
+}
+.formation,
+.courses {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.education img {
+  margin-top: 5px;
+  margin-right: 9px;
+}
+.item-list h2 {
+  font-size: 1.25rem;
+  color: var(--clr-section-subtitle);
+  margin-bottom: 5px;
+}
+.college {
+  font-family: var(--ff-secondary);
+  font-size: 1.3rem;
+  color: var(--clr-text-college);
+}
+.period {
+  font-size: 0.75rem;
+  color: var(--clr-text-period);
+  font-family: var(--ff-primary);
+  margin-bottom: 5px;
+}
+
+@media (max-width: 800px) {
+  .education {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+  .courses {
+    grid-column: 1;
+  }
+}

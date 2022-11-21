@@ -1,10 +1,8 @@
 @import url("./global/global.css");
-@import url("./global/header.css");
-@import url("./global/footer.css");
-
 @import url("./utility/components.css");
+@import url("./global/header.css");
 
 @import url("./home/about.css");
-@import url("./home/information.css");
-@import url("./home/formation.css");
+@import url("./home/projects.css");
+@import url("./home/education.css");
 @import url("./home/contact.css");
