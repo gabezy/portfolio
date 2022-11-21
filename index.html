@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel | Front-End Developer</title>
+    <script>document.documentElement.className += " js"</script>
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,9 +25,9 @@
                 <img src="/img/logo.svg" alt="GM" id="icon">
             </a>
             <ul class="internal-menu">
-                <li><a href="#projects-section">projects</a></li>
-                <li><a href="#education-section">education</a></li>
-                <li><a href="#social-section">contact</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#education">education</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
             <ul class="social-list">
                 <li>
@@ -39,14 +40,14 @@
                         <img src="/img/github.svg" alt="" id="github">
                     </a>
                 </li>
-                <li id="hamburger-menu"><i class="fa-solid fa-bars"></i></li>
+                <li id="hamburger"><i class="fa-solid fa-bars"></i></li>
             </ul>
         </nav>
-        <!-- <nav class="mobile-nav" aria-label="primary">
+        <nav class="grid-center mobile-nav js-mobile" aria-label="primary">
             <ul class="mobile-menu">
-                <li><a href="#projects-section">projects</a></li>
-                <li><a href="#education-section">education</a></li>
-                <li><a href="#social-section">socials</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#education">education</a></li>
+                <li><a href="#contact">socials</a></li>
             </ul>
             <ul class="mobile-social">
                 <li>
@@ -60,7 +61,7 @@
                     </a>
                 </li>
             </ul>
-        </nav> -->
+        </nav>
 
     </header>
 
@@ -80,32 +81,36 @@
         <h1 class="title-section">projects</h1>
         <ul class="projects-list">
             <li>
-                <h2>Bikcraft</h2>
-                <p class="list-description">A website for a fictional brand <strong>Bikecraft</strong> to sell their products and service. In this project i developed using HTML, CSS and Javascript
-                </p>
-                <ul class="tech-list">
-                    <li>html</li>
-                    <li>css</li>
-                    <li>Javascript</li>
-                    <li>ux design</li>
-                </ul>
+                <a href="">
+                    <h2>Bikcraft</h2>
+                    <p class="list-description">A website for a fictional brand <strong>Bikecraft</strong> to sell their products and service. In this project i developed using HTML, CSS and Javascript
+                    </p>
+                    <ul class="tech-list">
+                        <li>html</li>
+                        <li>css</li>
+                        <li>Javascript</li>
+                        <li>ux design</li>
+                    </ul>
+                </a>
             </li>
             <li>
-                <h2>Bikcraft</h2>
-                <p class="list-description">
-                    A website for a fictional brand <strong>Bikecraft</strong> to sell their products and service. In this project i developed using HTML, CSS and Javascript
-                </p>
-                <ul class="tech-list">
-                    <li>html</li>
-                    <li>css</li>
-                    <li>Javascript</li>
-                    <li>ux design</li>
-                </ul>
+                <a href="">
+                    <h2>Bikcraft</h2>
+                    <p class="list-description">
+                        A website for a fictional brand <strong>Bikecraft</strong> to sell their products and service. In this project i developed using HTML, CSS and Javascript
+                    </p>
+                    <ul class="tech-list">
+                        <li>html</li>
+                        <li>css</li>
+                        <li>Javascript</li>
+                        <li>ux design</li>
+                    </ul>
+                </a>
             </li>
         </ul>
     </section>
 
-    <section class="grid-center education" id="education-section" aria-label="education">
+    <section class="grid-center education" id="education" aria-label="education">
         <div class="formation">
             <h1 class="title-section col-wide">education</h1>
             <img src="./img/column.svg" alt="">
@@ -150,9 +155,9 @@
     </section>
 
 
-    <section class="grid-center contact" id="contact-section">
+    <section class="grid-center contact" id="contact">
         <h2 class="title-section">contact</h2>
-        <div>
+        <div class="contact-content">
             <p>Send me a message<span>!</span></p>
             <form class="contact-form" action="">
                 <div class="input-group">
@@ -163,20 +168,20 @@
                     <label for="email">Email</label>
                     <input required type="email" name="email" id="email">
                 </div>
-                <div class="input-group last">
+                <div class="input-group col-wide">
                     <label for="message">Message</label>
                     <textarea required name="message" id="message" rows="5"></textarea>
                 </div>
-                <button class="last">Send</button>
+                <button class="col-wide">Send</button>
 
             </form>
         </div>
     </section>
 
-    <!-- <footer>
+    <footer class="grid-center col-wide footer">
         <p>All rights reserved. Created by Gabriel Moreira</p>
-        <hr>
-    </footer> -->
+    </footer>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
