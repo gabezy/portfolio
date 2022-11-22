@@ -1,6 +1,6 @@
 .education {
   margin: 3rem 0;
-  display: grid;
+  display: grid !important;
   grid-template-columns: 1fr minmax(100px, 1fr) 1fr;
   align-items: flex-start;
 }
@@ -44,5 +44,11 @@
   }
   .courses {
     grid-column: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .education {
+    grid-column: 1/-1;
   }
 }

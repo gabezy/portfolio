@@ -1,17 +1,84 @@
-.about-c {
-  margin: 5rem;
+:root {
+  --fs-xl: 4rem;
+  --fs-l: 3rem;
+  --fs-m: 1.3rem;
+}
+
+@media (max-width: 800px) {
+  /* :root {
+    --fs-xl: 3rem;
+    --fs-l: 2rem;
+    --fs-m: 1rem;
+  }
+  .title::before {
+    top: -10px !important;
+    left: -30px !important;
+  } */
+  .about {
+    grid-column: 1/-1;
+  }
+}
+
+@media (max-width: 500px) {
+  :root {
+    --fs-xl: 3rem;
+    --fs-l: 2rem;
+    --fs-m: 0.9rem;
+  }
+  .title::before {
+    top: -10px !important;
+    left: -30px !important;
+    display: none !important;
+  }
+  .about {
+    padding-inline: 1rem;
+  }
+  .title span,
+  .description,
+  .description span,
+  .about-located {
+    margin-left: 5px;
+  }
+}
+
+/* @media (max-width: 500px) {
+  :root {
+    --fs-xl: 2rem;
+    --fs-l: 1rem;
+    --fs-m: 0.75rem;
+  }
+  .title span,
+  .description,
+  .description span,
+  .about-located {
+    margin-left: 3px;
+  }
+  .title span {
+    margin-bottom: 0.1rem;
+  }
+  .title {
+    margin-bottom: 0.5rem !important;
+  }
+  .title::before {
+    display: none !important;
+  }
+} */
+
+.about {
   display: grid;
   justify-content: center;
+  margin-block: 5rem;
 }
+
 .title span {
   display: block;
-  font-size: 3rem;
+  font-size: var(--fs-l);
   color: var(--text-primary);
   font-weight: bold;
 }
 
 .title {
-  font-size: 4rem;
+  font-size: var(--fs-xl);
   color: var(--clr-purple-dark);
   font-weight: bold;
   line-height: 1;
@@ -26,27 +93,27 @@
   background: url("../../img/detail.svg") no-repeat;
   position: absolute;
   z-index: -1;
-  left: -30px;
-  top: -15px;
+  left: -27px;
+  top: -5px;
 }
 
 .description {
   font-family: var(--ff-secondary);
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: var(--fs-m);
   line-height: 1.5;
   color: var(--text-primary);
   padding-bottom: 0.2rem;
 }
 .description span {
   color: var(--clr-typewriter);
-  font-size: 1.3rem;
+  font-size: var(--fs-m);
 }
 .about-located {
-  font-size: 1.3rem;
+  font-size: var(--fs-m);
   color: var(--text-secondary);
 }
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
   .title span {
     font-size: 2rem;
   }
@@ -73,4 +140,4 @@
   .description span {
     font-size: 0.75rem;
   }
-}
+} */

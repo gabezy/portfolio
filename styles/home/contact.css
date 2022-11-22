@@ -72,3 +72,9 @@
     grid-column: 1;
   }
 }
+
+@media (max-width: 500px) {
+  .contact {
+    grid-column: 1/-1;
+  }
+}

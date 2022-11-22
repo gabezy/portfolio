@@ -1,5 +1,22 @@
+:root {
+  --fs-project-listH2: 1.625rem;
+  --fs-project-listP: 1.125rem;
+  --fs-tech-list: 0.875rem;
+}
+
+@media (max-width: 500px) {
+  :root {
+    --fs-project-listH2: 1.3rem;
+    --fs-project-listP: 1rem;
+    --fs-tech-list: 0.7rem;
+  }
+  .projects {
+    grid-column: 1/-1;
+  }
+}
+
 .projects {
-  margin: 3rem 0;
+  margin: 4rem 0;
 }
 .projects-list {
   margin-top: 20px;
@@ -12,11 +29,11 @@
   grid-column: 3;
 }
 .projects-list h2 {
-  font-size: 1.625rem;
+  font-size: var(--fs-project-listH2);
   margin-bottom: 10px;
 }
 .projects-list p {
-  font-size: 1.125rem;
+  font-size: var(--fs-project-listP);
   color: var(--text-primary);
   max-width: 37ch;
   margin-bottom: 1.25rem;
@@ -32,7 +49,7 @@
   grid-column: 1/-1 !important;
 }
 .tech-list li {
-  font-size: 0.875rem;
+  font-size: var(--fs-tech-list);
   text-transform: uppercase;
   padding: 0.8rem 1rem;
   color: var(--text-secondary);

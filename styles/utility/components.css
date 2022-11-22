@@ -20,3 +20,11 @@
   background: var(--title-detail);
   border-radius: 5px;
 }
+
+@media (max-width: 500px) {
+  .title-section {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+}

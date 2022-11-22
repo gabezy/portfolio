@@ -1,3 +1,59 @@
+const mode = "activate";
+
+// Mobile menu
+
+function initMobileNav() {
+  const mobileNav = document.querySelector(".js-mobile");
+
+  if (mobileNav) {
+    const hamburgerMenu = document.querySelector("i");
+    const mobileInternalLinks = document.querySelectorAll(
+      ".mobile-menu a[href^='#']"
+    );
+    function showMobileMenu() {
+      let hamburgerIcon = hamburgerMenu.className.includes("bars");
+      if (hamburgerIcon) hamburgerMenu.className = "fa-solid fa-xmark";
+      else hamburgerMenu.className = "fa-solid fa-bars";
+
+      mobileNav.classList.toggle(mode);
+      document.body.classList.toggle(mode);
+    }
+
+    function hiddenMobileNav() {
+      mobileNav.classList.remove(mode);
+      document.body.classList.remove(mode);
+      hamburgerMenu.className = "fa-solid fa-bars";
+    }
+
+    hamburgerMenu.addEventListener("click", showMobileMenu);
+    mobileInternalLinks.forEach((link) => {
+      link.addEventListener("click", hiddenMobileNav);
+    });
+  }
+}
+
+initMobileNav();
+// Scroll effects
+
+const sectionsScroll = document.querySelectorAll(".js-scroll");
+
+function initAnimatedScroll() {
+  if (sectionsScroll.length) {
+    sectionsScroll[0].classList.add(mode);
+    function animatedScroll() {
+      sectionsScroll.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if (sectionTop < 500) {
+          section.classList.add(mode);
+        }
+      });
+    }
+
+    window.addEventListener("scroll", animatedScroll);
+  }
+}
+
+initAnimatedScroll();
 // Typewriter Effect
 // const outputDiv = document.getElementById("typed-content");
 // const txt =
@@ -53,22 +109,3 @@
 //     column2.src = "/img/column.svg";
 //   }
 // };
-
-// Mobile menu
-const mobileNav = document.querySelector(".js-mobile");
-
-if (mobileNav) {
-  const hamburgerMenu = document.querySelector("i");
-
-  function showMobileMenu() {
-    const mode = "activate";
-    let hamburgerIcon = hamburgerMenu.className.includes("bars");
-    if (hamburgerIcon) hamburgerMenu.className = "fa-solid fa-xmark";
-    else hamburgerMenu.className = "fa-solid fa-bars";
-
-    mobileNav.classList.toggle(mode);
-    document.body.classList.toggle(mode);
-  }
-
-  hamburgerMenu.addEventListener("click", showMobileMenu);
-}
