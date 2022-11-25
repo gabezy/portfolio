@@ -22,7 +22,7 @@
     --title-detail-img: "img/detail.svg";
     --clr-nav-item-bg-mobile: #f1f1f1;
   }
-  
+/*   
   .dark-mode {
     --clr-nav-item: #fff;
     --clr-purple-dark: #7758bf;
@@ -43,7 +43,7 @@
       brightness(86%) contrast(95%);
     --clr-nav-item-bg-mobile: #878787;
     --clr-text-footer: #fff
-  }
+  } */
   
   html {
     scroll-behavior: smooth;
@@ -90,15 +90,17 @@
 
   /* Section Effect */
 
-  .js .js-scroll {
+  .js [data-anime^="scroll"] {
     opacity: 0;
   }
-  .js .js-scroll.activate {
-    display: block;
-    animation: slideLeft 0.5s forwards;
+  .js [data-anime="scroll left"].activate {
+    animation: showLeft 0.5s forwards;
+  }
+  .js [data-anime="scroll up"].activate {
+    animation: showUp 0.5s forwards;
   }
 
-  @keyframes slideLeft {
+  @keyframes showLeft {
     from {
       opacity: 0;
       transform: translateX(-100px);
@@ -106,5 +108,16 @@
     to {
       opacity: 1;
       transform: translateX(0px);
+    }
+  }
+
+  @keyframes showUp {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0px);
     }
   }

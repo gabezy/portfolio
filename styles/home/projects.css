@@ -16,7 +16,7 @@
 }
 
 .projects {
-  margin: 4rem 0;
+  margin: 7rem 0;
 }
 .projects-list {
   margin-top: 20px;
@@ -24,6 +24,9 @@
   grid-template-columns: 1fr minmax(100px, 1fr) 1fr;
   padding-left: 20px;
   color: var(--clr-section-subtitle);
+}
+.projects-list li a:hover h2 {
+  color: var(--clr-typewriter);
 }
 .projects-list li:last-child {
   grid-column: 3;
