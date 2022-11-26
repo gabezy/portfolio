@@ -20,31 +20,153 @@
 </head>
 
 <body>
-    <header class="header grid-center">
-        <nav class="menu-nav" aria-label="primary">
-            <a class="logo" href="./index.html">
-                <img src="/img/logo.svg" alt="GM" id="icon">
-            </a>
-            <ul class="internal-menu">
-                <li><a href="#projects">projects</a></li>
-                <li><a href="#education">education</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul>
-            <ul class="social-list">
+    <div class="grid-container">
+        <header class="header grid-center">
+            <nav class="menu-nav" aria-label="primary">
+                <a class="logo" href="./index.html">
+                    <img src="/img/logo.svg" alt="GM" id="icon">
+                </a>
+                <button data-mobile="btn">Menu</button>
+
+                <ul class="internal-menu">
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#education">education</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+                <ul class="social-list">
+                    <li>
+                        <a href="https://www.linkedin.com/in/gabriel-moreira-dev1/" target="_blank">
+                            <img src="/img/linkedin.svg" alt="" id="linkedin">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/gabezy" target="_blank">
+                            <img src="/img/github.svg" alt="" id="github">
+                        </a>
+                    </li>
+                    <!-- <li id="hamburger"><i class="fa-solid fa-bars"></i></li> -->
+
+                </ul>
+            </nav>
+
+
+        </header>
+
+        <main class="grid-center about" data-anime="scroll up">
+            <h1 class="title">
+                <span>My name is</span>
+                Gabriel Moreira
+            </h1>
+            <p class="description" data-typewriter></p>
+        </main>
+
+        <section class="grid-center projects" data-anime="scroll left" id="projects" aria-label="projects">
+            <h1 class="title-section">projects</h1>
+            <ul class="projects-list">
                 <li>
-                    <a href="https://www.linkedin.com/in/gabriel-moreira-dev1/" target="_blank">
-                        <img src="/img/linkedin.svg" alt="" id="linkedin">
+                    <a href="">
+                        <h2>Bikcraft</h2>
+                        <p class="list-description">A website for a fictional brand <strong>Bikecraft</strong> to sell their products and service. In this project i developed using HTML, CSS and Javascript
+                        </p>
+                        <ul class="tech-list">
+                            <li>html</li>
+                            <li>css</li>
+                            <li>Javascript</li>
+                            <li>ux design</li>
+                        </ul>
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/gabezy" target="_blank">
-                        <img src="/img/github.svg" alt="" id="github">
+                    <a href="">
+                        <h2>Bikcraft</h2>
+                        <p class="list-description">
+                            A website for a fictional brand <strong>Bikecraft</strong> to sell their products and service. In this project i developed using HTML, CSS and Javascript
+                        </p>
+                        <ul class="tech-list">
+                            <li>html</li>
+                            <li>css</li>
+                            <li>Javascript</li>
+                            <li>ux design</li>
+                        </ul>
                     </a>
                 </li>
-                <li id="hamburger"><i class="fa-solid fa-bars"></i></li>
             </ul>
-        </nav>
-        <nav class="grid-center mobile-nav js-mobile" aria-label="primary">
+        </section>
+
+        <section class="grid-center education" data-anime="scroll left" id="education" aria-label="education">
+            <div class="formation">
+                <h1 class="title-section col-wide">education</h1>
+                <img src="./img/column.svg" alt="">
+                <ul class="item-list">
+                    <li>
+                        <h2>Bachelor’s Degree -<br>Business
+                        </h2>
+                        <p class="college">Uniceub</p>
+                        <p class="period">Fev/2021 - Dez/2024</p>
+                    </li>
+                    <li>
+                        <h2>Technology Degree -<br>Desenvolvimento<br>Full-Stack
+                        </h2>
+                        <p class="college">Uniceub</p>
+                        <p class="period">Fev/2021 - Dez/2024</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="courses">
+                <h1 class="title-section col-wide">courses</h1>
+                <img src="./img/column.svg" alt="">
+                <ul class="item-list">
+                    <li>
+                        <h2>
+                            UX & UI<br>
+                            Design
+                        </h2>
+                        <p class="college">Origamid</p>
+                        <p class="period">56H</p>
+                    </li>
+                    <li>
+                        <h2>
+                            Front-End para
+                            <br>Iniciantes
+                        </h2>
+                        <p class="college">Origamid</p>
+                        <p class="period">56H</p>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="grid-center contact" data-anime="scroll left" id="contact">
+            <h2 class="title-section">contact</h2>
+            <div class="contact-content">
+                <p>Send me a message<span>!</span></p>
+                <form class="contact-form" action="">
+                    <div class="input-group">
+                        <label for="name">Name</label>
+                        <input required type="text" name="name" id="name">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input required type="email" name="email" id="email">
+                    </div>
+                    <div class="input-group col-wide">
+                        <label for="message">Message</label>
+                        <textarea required name="message" id="message" rows="5"></textarea>
+                    </div>
+                    <button class="col-wide">Send</button>
+
+                </form>
+            </div>
+        </section>
+
+        <footer class="grid-center col-wide footer">
+            <p>All rights reserved. Created by Gabriel Moreira</p>
+        </footer>
+    </div>
+    <div data-mobile="menu" aria-label="primary">
+        <nav class="mobile-nav" data-mobile="nav">
             <ul class="mobile-menu">
                 <li><a href="#projects">projects</a></li>
                 <li><a href="#education">education</a></li>
@@ -63,121 +185,7 @@
                 </li>
             </ul>
         </nav>
-
-    </header>
-
-    <main class="grid-center about" data-anime="scroll up">
-        <h1 class="title">
-            <span>My name is</span>
-            Gabriel Moreira
-        </h1>
-        <p class="description" data-typewriter></p>
-    </main>
-
-    <section class="grid-center projects" data-anime="scroll left" id="projects" aria-label="projects">
-        <h1 class="title-section">projects</h1>
-        <ul class="projects-list">
-            <li>
-                <a href="">
-                    <h2>Bikcraft</h2>
-                    <p class="list-description">A website for a fictional brand <strong>Bikecraft</strong> to sell their products and service. In this project i developed using HTML, CSS and Javascript
-                    </p>
-                    <ul class="tech-list">
-                        <li>html</li>
-                        <li>css</li>
-                        <li>Javascript</li>
-                        <li>ux design</li>
-                    </ul>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <h2>Bikcraft</h2>
-                    <p class="list-description">
-                        A website for a fictional brand <strong>Bikecraft</strong> to sell their products and service. In this project i developed using HTML, CSS and Javascript
-                    </p>
-                    <ul class="tech-list">
-                        <li>html</li>
-                        <li>css</li>
-                        <li>Javascript</li>
-                        <li>ux design</li>
-                    </ul>
-                </a>
-            </li>
-        </ul>
-    </section>
-
-    <section class="grid-center education" data-anime="scroll left" id="education" aria-label="education">
-        <div class="formation">
-            <h1 class="title-section col-wide">education</h1>
-            <img src="./img/column.svg" alt="">
-            <ul class="item-list">
-                <li>
-                    <h2>Bachelor’s Degree -<br>Business
-                    </h2>
-                    <p class="college">Uniceub</p>
-                    <p class="period">Fev/2021 - Dez/2024</p>
-                </li>
-                <li>
-                    <h2>Technology Degree -<br>Desenvolvimento<br>Full-Stack
-                    </h2>
-                    <p class="college">Uniceub</p>
-                    <p class="period">Fev/2021 - Dez/2024</p>
-                </li>
-            </ul>
-        </div>
-        <div class="courses">
-            <h1 class="title-section col-wide">courses</h1>
-            <img src="./img/column.svg" alt="">
-            <ul class="item-list">
-                <li>
-                    <h2>
-                        UX & UI<br>
-                        Design
-                    </h2>
-                    <p class="college">Origamid</p>
-                    <p class="period">56H</p>
-                </li>
-                <li>
-                    <h2>
-                        Front-End para
-                        <br>Iniciantes
-                    </h2>
-                    <p class="college">Origamid</p>
-                    <p class="period">56H</p>
-                </li>
-
-            </ul>
-        </div>
-    </section>
-
-
-    <section class="grid-center contact" data-anime="scroll left" id="contact">
-        <h2 class="title-section">contact</h2>
-        <div class="contact-content">
-            <p>Send me a message<span>!</span></p>
-            <form class="contact-form" action="">
-                <div class="input-group">
-                    <label for="name">Name</label>
-                    <input required type="text" name="name" id="name">
-                </div>
-                <div class="input-group">
-                    <label for="email">Email</label>
-                    <input required type="email" name="email" id="email">
-                </div>
-                <div class="input-group col-wide">
-                    <label for="message">Message</label>
-                    <textarea required name="message" id="message" rows="5"></textarea>
-                </div>
-                <button class="col-wide">Send</button>
-
-            </form>
-        </div>
-    </section>
-
-    <footer class="grid-center col-wide footer">
-        <p>All rights reserved. Created by Gabriel Moreira</p>
-    </footer>
+    </div>
     <script type="module" src="./js/script.js"></script>
 </body>
 

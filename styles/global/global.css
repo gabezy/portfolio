@@ -59,17 +59,14 @@
     display: block;
   }
   
-  body {
+  .grid-container {
     font-family: var(--ff-primary);
     background: var(--clr-bg);
     display: grid;
     grid-template-columns: minmax(50px, 200px) 1fr minmax(50px, 200px);
   }
-  body.activate {
+  .js body.activate {
     overflow: hidden;
-  }
-  body.mobile-mode {
-    overflow-y: hidden;
   }
   
   ul {
@@ -83,7 +80,7 @@
 
 
   @media (max-width: 800px) {
-    body {
+    .grid-container  {
       grid-template-columns: minmax(5px,50px) 1fr minmax(5px,50px);
     }
   }

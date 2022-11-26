@@ -42,73 +42,7 @@
 .social-list li {
   max-width: 48px;
 }
-.social-list i {
-  display: none;
-  font-size: 2.2rem;
-}
 
-.header i {
-  cursor: pointer;
-}
-
-/* Mobile Menu */
-
-.mobile-nav {
-  position: fixed;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100vw;
-  min-height: 100vh;
-  left: 100%;
-  z-index: 1;
-  background: #cbcbcb;
-  padding-top: 160px;
-  transition: left 0.4s;
-}
-.mobile-nav.activate {
-  left: 0;
-}
-.mobile-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-}
-.mobile-menu li {
-  width: 150px;
-  background: #f5f5f5;
-  border-radius: 10px;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--text-primary);
-  padding: 1rem 2rem;
-  letter-spacing: 0.01rem;
-}
-.mobile-social {
-  margin: 2rem 0;
-  display: flex;
-  gap: 15px;
-}
-.mobile-social li {
-  width: 60px;
-}
-
-@media (max-width: 800px) {
-  .js .internal-menu {
-    display: none;
-  }
-  .js .social-list a {
-    display: none;
-  }
-  .js .social-list i {
-    display: block;
-  }
-  .js #hamburger {
-    z-index: 11111;
-  }
-}
 @media (max-width: 500px) {
   .header {
     grid-column: 1/-1;

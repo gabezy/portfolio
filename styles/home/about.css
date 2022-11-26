@@ -9,6 +9,9 @@
   .about {
     grid-column: 1/-1;
   }
+  .about {
+    margin-bottom: 200px !important;
+  }
 }
 
 @media (max-width: 550px) {

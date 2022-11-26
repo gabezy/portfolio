@@ -70,4 +70,7 @@
   .projects-list li:last-child {
     grid-column: 1;
   }
+  .projects {
+    margin: 3rem 0;
+  }
 }

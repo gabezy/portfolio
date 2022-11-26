@@ -4,7 +4,6 @@ export default function initTypewriter() {
     const text =
       "I am a front-end developer who knows about UX Design and back-end. <s>HTML<s>, <s>CSS<s> & <s>JavaScript<s> are my <s>best-friends<s>Located in brasília, Brazil";
     const splittedText = text.split("<s>");
-    console.log(splittedText);
 
     splittedText.forEach(() => {
       const span = document.createElement("span");

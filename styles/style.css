@@ -1,6 +1,7 @@
 @import url("./global/global.css");
 @import url("./utility/components.css");
 @import url("./global/header.css");
+@import url("./others/menu-mobile.css");
 @import url("./global/footer.css");
 
 @import url("./home/about.css");

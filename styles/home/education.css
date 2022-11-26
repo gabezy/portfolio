@@ -48,6 +48,9 @@
   .courses {
     grid-column: 1;
   }
+  .education {
+    margin: 3rem 0;
+  }
 }
 
 @media (max-width: 500px) {

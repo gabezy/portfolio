@@ -1,5 +1,5 @@
-import initMobileNav from "./modules/mobile-tab.js";
-import initAnimatedScroll from "./modules/animate-scroll.js";
+import initMobileNav from "./modules/mobileMenu.js";
+import initAnimatedScroll from "./modules/animateScroll.js";
 import initTypewriter from "./modules/typewriter.js";
 
 initMobileNav();
