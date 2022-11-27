@@ -41,8 +41,8 @@ export default function initMobileNav() {
     };
 
     events.forEach((userEvents) => {
-      mobileLinks.forEach((links) => {
-        links.addEventListener(userEvents, toLink);
+      mobileLinks.forEach((mobileLinks) => {
+        mobileLinks.addEventListener(userEvents, toLink);
       });
     });
   }

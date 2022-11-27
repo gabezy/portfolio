@@ -10,8 +10,7 @@ export default function initFormContanct() {
           "<p class='sent-message'><span>Messange sent successfully</span>I will contact you soon</p>";
       } else {
         form.innerHTML =
-          // "<p class='erro-message'>Erro sending email, you can send directly for my email: <span>contact@gabrielmdev.com</span></p>";
-          "<p class='sent-message'><span>Messange sent successfully.</span> I will contact you soon</p>";
+          "<p class='erro-message'>Erro sending email, you can send directly for my email: <span>contact@gabrielmdev.com</span></p>";
       }
     }
 

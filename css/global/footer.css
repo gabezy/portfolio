@@ -2,8 +2,8 @@
   margin-top: 2rem;
   padding-block: 10px;
   text-align: center;
-  color: #fff;
   background: var(--footer-bar-bg);
+  color: #fff;
 }
 @media (max-width: 500px) {
   .footer {
