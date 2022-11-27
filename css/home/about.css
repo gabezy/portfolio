@@ -34,6 +34,16 @@
     margin-left: 5px;
   }
 }
+@media (max-width: 400px) {
+  :root {
+    --fs-xl: 2rem;
+    --fs-l: 1.5rem;
+  }
+  .title span {
+    margin-left: 2px;
+    margin-bottom: 5px;
+  }
+}
 
 .about {
   display: grid;
@@ -67,6 +77,11 @@
   left: -27px;
   top: -5px;
 }
+@media (prefers-color-scheme: dark) {
+  .title::before {
+    background: url("../../img/darkmode/detail-dark.svg") no-repeat;
+  }
+}
 
 .description {
   font-family: var(--ff-secondary);
@@ -84,18 +99,11 @@
 .description span:last-child {
   display: block;
   font-size: var(--fs-s);
-  color: var(--text-secondary);
+  color: var(--clr-text-located);
   font-weight: 400;
   margin-top: 0.5rem;
 }
 
-@keyframes aa {
-  to {
-    opacity: 0;
-    max-height: 0px;
-  }
-  from {
-    opacity: 1;
-    max-height: 100px;
-  }
+.description {
+  height: 130px;
 }

@@ -1,29 +1,33 @@
 :root {
-    --ff-primary: "Fira Sans", Arial, sans-serif;
-    --ff-secondary: "Fira Code", monospace;
-    --clr-nav-item: #2e2e2e;
-    --clr-purple-dark: #260e5b;
-    --clr-purple-light: #613fb1;
-    --clr-typewriter: #613fb1;
-    --clr-bg: #f5f5f5;
-    --title-detail: #b87ce6;
-    --footer-bar-bg: #2d0f71;
-    --text-primary: #000;
-    --text-secondary: #111010;
-    --clr-section-title: #1b1b1b;
-    --clr-section-subtitle: #2e2e2e;
-    --clr-tech-item: #cbcbcb;
-    --clr-text-college: #525050;
-    --clr-text-period: #838383;
-    --clr-text-located: #000000;
-    --clr-text-footer: #7E7C7C
-    --filter-effect: invert(31%) sepia(14%) saturate(3557%) hue-rotate(223deg)
-      brightness(97%) contrast(104%);
-    --title-detail-img: "img/detail.svg";
-    --clr-nav-item-bg-mobile: #f1f1f1;
-  }
-/*   
-  .dark-mode {
+  --ff-primary: "Fira Sans", Arial, sans-serif;
+  --ff-secondary: "Fira Code", monospace;
+  --clr-nav-item: #2e2e2e;
+  --clr-purple-dark: #260e5b;
+  --clr-purple-light: #613fb1;
+  --clr-typewriter: #613fb1;
+  --clr-bg: #f5f5f5;
+  --title-detail: #b87ce6;
+  --footer-bar-bg: #2d0f71;
+  --text-primary: #000;
+  --text-secondary: #111010;
+  --clr-section-title: #1b1b1b;
+  --clr-section-subtitle: #2e2e2e;
+  --clr-tech-item: #cbcbcb;
+  --clr-text-college: #525050;
+  --clr-text-period: #838383;
+  --clr-text-located: #000000;
+  --clr-text-footer: #7e7c7c;
+  --filter-effect: invert(31%) sepia(14%) saturate(3557%) hue-rotate(223deg)
+    brightness(97%) contrast(104%);
+  --title-detail-img: "img/detail.svg";
+  --clr-nav-item-bg-mobile: #f1f1f1;
+  --clr-form-input: #f7f7f7;
+  --clr-form-input-border: #e6e6e6;
+  --clr-bg-input-focus: #f9f9f9;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
     --clr-nav-item: #fff;
     --clr-purple-dark: #7758bf;
     --clr-purple-light: #9f23fe;
@@ -42,79 +46,82 @@
     --filter-effect: invert(34%) sepia(90%) saturate(1036%) hue-rotate(232deg)
       brightness(86%) contrast(95%);
     --clr-nav-item-bg-mobile: #878787;
-    --clr-text-footer: #fff
-  } */
-  
-  html {
-    scroll-behavior: smooth;
+    --clr-text-footer: #fff;
+    --clr-form-input: #838383;
+    --clr-form-input-border: #525050;
+    --clr-bg-input-focus: #2e2e2e;
   }
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  img {
-    max-width: 100%;
-    display: block;
-  }
-  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.grid-container {
+  font-family: var(--ff-primary);
+  background: var(--clr-bg);
+  display: grid;
+  grid-template-columns: minmax(50px, 200px) 1fr minmax(50px, 200px);
+}
+.js body.activate {
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 800px) {
   .grid-container {
-    font-family: var(--ff-primary);
-    background: var(--clr-bg);
-    display: grid;
-    grid-template-columns: minmax(50px, 200px) 1fr minmax(50px, 200px);
+    grid-template-columns: minmax(5px, 50px) 1fr minmax(5px, 50px);
   }
-  .js body.activate {
-    overflow: hidden;
-  }
-  
-  ul {
-    list-style: none;
-  }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
+}
 
+/* Section Effect */
 
-  @media (max-width: 800px) {
-    .grid-container  {
-      grid-template-columns: minmax(5px,50px) 1fr minmax(5px,50px);
-    }
-  }
+.js [data-anime^="scroll"] {
+  opacity: 0;
+}
+.js [data-anime="scroll left"].activate {
+  animation: showLeft 0.5s forwards;
+}
+.js [data-anime="scroll up"].activate {
+  animation: showUp 0.5s forwards;
+}
 
-  /* Section Effect */
-
-  .js [data-anime^="scroll"] {
+@keyframes showLeft {
+  from {
     opacity: 0;
+    transform: translateX(-100px);
   }
-  .js [data-anime="scroll left"].activate {
-    animation: showLeft 0.5s forwards;
+  to {
+    opacity: 1;
+    transform: translateX(0px);
   }
-  .js [data-anime="scroll up"].activate {
-    animation: showUp 0.5s forwards;
-  }
+}
 
-  @keyframes showLeft {
-    from {
-      opacity: 0;
-      transform: translateX(-100px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0px);
-    }
+@keyframes showUp {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
   }
-
-  @keyframes showUp {
-    from {
-      opacity: 0;
-      transform: translateY(-30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0px);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
   }
+}

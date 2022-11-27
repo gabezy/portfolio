@@ -7,10 +7,11 @@ export default function initFormContanct() {
     function sentForm(response) {
       if (response.ok) {
         form.innerHTML =
-          "<p style='padding-block: 1rem; grid-column: 1/-1; justify-self: center; font-size: 1.4rem'><span style='color: var(--clr-typewriter); display: block; margin-bottom: 0.5rem''>Messange sent successfully</span>I will contact you soon</p>";
+          "<p class='sent-message'><span>Messange sent successfully</span>I will contact you soon</p>";
       } else {
         form.innerHTML =
-          "<p style='padding-block: 1rem; grid-column: 1/-1; justify-self: center; margin-bottom: 0.5rem'>Erro sending email, you can send directly for my email:<span style='color: var; display: block;(--clr-typewriter);'>contact@gabrielmdev.com</span></p>";
+          // "<p class='erro-message'>Erro sending email, you can send directly for my email: <span>contact@gabrielmdev.com</span></p>";
+          "<p class='sent-message'><span>Messange sent successfully.</span> I will contact you soon</p>";
       }
     }
 
