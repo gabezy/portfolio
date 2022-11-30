@@ -22,7 +22,7 @@ export default function initFormContanct() {
 
       const data = new FormData(form);
 
-      fetch("../../send.php", {
+      fetch("./send.php", {
         method: "POST",
         body: data,
       }).then(sentForm);
