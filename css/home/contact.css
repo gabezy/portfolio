@@ -38,6 +38,10 @@
   background: var(--clr-form-input);
   color: var(--text-primary);
 }
+.input-group textarea {
+  resize: none;
+}
+
 .input-group input:focus,
 .input-group textarea:focus {
   box-shadow: 0 0 0 2px var(--clr-purple-light);
@@ -64,6 +68,7 @@
   border-radius: 44px;
   justify-self: end;
   color: var(--text-primary);
+  cursor: pointer;
 }
 @media (max-width: 800px) {
   .contact-form {
